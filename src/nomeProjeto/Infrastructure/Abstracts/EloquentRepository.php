@@ -79,9 +79,7 @@ abstract class EloquentRepository implements BaseRepository
             return $this->findOneBy(['id' => $id]);
         }
 
-        return Cache::remember($id, 3600, function () use ($id) {
-            return $this->findOneBy(['id' => $id]);
-        });
+        return $this->findOneBy(['id' => $id]);
     }
 
     private function authCheck()

@@ -6,5 +6,5 @@ use NomeProjeto\Infrastructure\Contracts\BaseRepository;
 
 interface UserRepository extends BaseRepository
 {
-    //public function loginsWithThisIpExists(array $data): bool;
+    //
 }

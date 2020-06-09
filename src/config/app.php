@@ -169,12 +169,12 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Application\Providers\AppServiceProvider::class,
-        App\Application\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Application\Providers\EventServiceProvider::class,
-        App\Application\Providers\RouteServiceProvider::class,
-        App\Application\Providers\RepositoryServiceProvider::class,
+        NomeProjeto\Application\Providers\AppServiceProvider::class,
+        NomeProjeto\Application\Providers\AuthServiceProvider::class,
+        // NomeProjeto\Providers\BroadcastServiceProvider::class,
+        NomeProjeto\Application\Providers\EventServiceProvider::class,
+        NomeProjeto\Application\Providers\RouteServiceProvider::class,
+        NomeProjeto\Application\Providers\RepositoryServiceProvider::class,
 
     ],
 
@@ -191,7 +191,7 @@ return [
 
     'aliases' => [
 
-        'App' => Illuminate\Support\Facades\App::class,
+        'NomeProjeto' => Illuminate\Support\Facades\NomeProjeto::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
         'Auth' => Illuminate\Support\Facades\Auth::class,
